@@ -19,8 +19,8 @@ slurmJobLogPath: /home/deng/shaoxia/slurm_job_logs
 slurmJobScriptPath: /home/deng/shaoxia/slurm_job_scripts
 slurmPartition: defaults
 
-slurmDatabase: slurm_acct_db
-slurmUser: deng
+slurmDatabase: *******
+slurmUser: ******
 slurmPassword: ******
 slurmHost: ********
 
