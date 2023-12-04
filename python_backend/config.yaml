@@ -1,12 +1,12 @@
-MysqlDatabase: scap
-MysqlUser: deng
-MysqlPassword: deng0106
-MysqlHost: localhost
+MysqlDatabase: *****
+MysqlUser: *****
+MysqlPassword: *******
+MysqlHost: *******
 
 # for add user manage slurm jobs
-adminName: deng
-adminEmail: weiweideng0106@outlook.com
-adminPasswd: 123456
+adminName: **************
+adminEmail: *************
+adminPasswd: **********
 
 #dataDir: /home/deng/data
 #toolsFile: /home/deng/tools_file
@@ -21,8 +21,8 @@ slurmPartition: defaults
 
 slurmDatabase: slurm_acct_db
 slurmUser: deng
-slurmPassword: deng0106
-slurmHost: localhost
+slurmPassword: ******
+slurmHost: ********
 
 ############################## downstream analysis config #####################
 
