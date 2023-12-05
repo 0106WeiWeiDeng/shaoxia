@@ -27,17 +27,6 @@ import aiofiles
 import uuid
 import subprocess
 
-# R variable name: 'seurat_' + upload_data.id project.combined subcluster
-# 数据目录结构需要重新设计
-# 命名规则：is_admin
-
-# ！！！ 考虑已有质控、分群、注释信息的数据重新质控、分群、质控的操作  ！！！！
-# ？？？？还未解决：integrate 与 merge 的seurat对象中，对orig.ident重新命名
-# ？？？？还未解决：注释的时候marker gene heatmapplot,  stack vlnplot (20230220 已解决)
-# bug: 下游分析任务重新提交，需要先取消原来的同样任务，才可以重新提交
-# performent bug: file IOs need asyncio.to_thread() to make non-blocking(20230821 已解决)
-# pipline bug: query integrate data has no merge data!
-
 lock_user = asyncio.Lock()
 logined_user = {} # key: user_id  value: token
 lock_rserv = asyncio.Lock() # lock for rserv_connections
