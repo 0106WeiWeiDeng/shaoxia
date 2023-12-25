@@ -6946,7 +6946,7 @@ async def query_slurm_job(request):
             rows2 = await res2.fetchall()
             for row2 in rows2:
                 results.append({
-                    "user_id": str(rows2[0]),
+                    "user_id": str(row2[0]),
                     "slurm_job_id": str(row2[2]),
                     "slurm_job_state": row2[3],
                     "analysis_type": "upstream_generate_loom",
